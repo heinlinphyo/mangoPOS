@@ -1,0 +1,134 @@
+@import "../fonts/barlow/BarlowCondensed-bold.ttf";
+@import "../fonts/barlow/BarlowCondensed-Black.ttf";
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 100vh !important;
+}
+.wrapper{
+    display: flex;
+}
+
+/* ***** sidebar ***** */
+nav.sidebar{
+    min-width: 200px;
+    max-width: 200px;
+    text-align: left;
+    transition: all 0.4s;
+}
+nav#sidebar strong{
+    display: none;
+}
+nav#sidebar.active strong{
+    display: block;
+    width:50px;
+
+}
+nav#sidebar.active img.main-logo{
+    display: none;
+}
+nav#sidebar.active{
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    transition: all 0.4s;
+}
+#sidebar span{
+    transition: all 0.4s;
+}
+#sidebar.active span {
+    font-size: 0px;
+    transition: all 0.4s;
+}
+
+nav .sidebar-head{
+    padding: 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 7px;
+}
+nav ul li {
+    padding: 7px;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+
+
+/* ***** main content ***** */
+#main-content{
+    width: 100%;
+}
+/* ***** navbar ***** */
+.navbar{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 0;
+}
+#dropdown-menu{
+    left: auto !important;
+    right: 20px !important;
+}
+.user-area a:hover{
+    text-decoration: none;
+}
+#dropdown-menu .nav-link{
+    color: slategray;
+}
+#dropdown-menu .nav-link:hover{
+    color: #000;
+}
+/* card */
+.card{
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.card .card-header{
+    border-radius: 20px;
+
+}
+
+/* modal box */
+#order_box{
+    display: block !important;
+    position: inherit !important;
+    z-index: unset !important;
+}
+
+/* button */
+
+button#del{
+    margin-left: 5px;
+}
+button#check{
+    margin-right: 5px;
+}
+#edit_btn, #del_btn{
+    color: #ffffff;
+    box-shadow:0 0 3px gray;
+    border-radius: 2px;
+}
+
+
+/* print table css */
+
+#orderList table{
+    padding: 0;
+}
+#orderList table tr th{
+    width: 50px;
+    padding: 0 !important;
+}
+#orderList tr td{
+    padding:0 !important;
+
+}
+#printableArea p{
+    padding: 0 !important;
+    margin:0 !important;
+}
+
